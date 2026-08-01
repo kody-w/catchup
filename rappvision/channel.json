@@ -1,0 +1,37 @@
+{
+  "schema": "rapp-vision-channel/1.0",
+  "id": "catchup",
+  "name": "Catch-up",
+  "handle": "@kody-w",
+  "avatar": "https://avatars.githubusercontent.com/u/6146755?v=4",
+  "about": "Autopilot catch-ups. Each episode is the wide shot on a session that ran while nobody was watching: what landed, what broke, and what is still queued. The failures are the point — a recap that only lists wins is not a recap.",
+  "links": [
+    { "label": "Watch on Pages", "url": "https://kody-w.github.io/catchup/" },
+    { "label": "Source", "url": "https://github.com/kody-w/catchup" }
+  ],
+  "_hosting": "This channel lives inside the kody-w/catchup repo, next to the video it serves. Origin-relative from the player, like the other channels in the network.",
+  "videos": [
+    {
+      "id": "catchup-2026-08-01",
+      "title": "Catch-up — August 1",
+      "published": "2026-08-01",
+      "duration": 77,
+      "tags": ["catch-up", "autopilot", "rapp-allele", "local-first", "hyperframes"],
+      "description": "You set it running and walked away. Seven repos landed — the constitution with its bill of rights, the map remade as the mapp, a hub for the twin to inherit from. The allele is the one worth your time: rarity is derived from the rappid tail, so nobody can re-roll it and anyone can verify it offline. Then the part worth reading — one command reported it had inherited an archetype while writing absolutely nothing to disk, which is the worst failure there is. 289 tests green across three repos, and zero personal values in anything public, checked by machine rather than by reading. Four things asked for do not exist yet.",
+      "thumb": "../poster.jpg",
+      "sources": [
+        { "src": "../catch-up-aug-1.mp4", "type": "video/mp4" }
+      ],
+      "chapters": [
+        { "t": 0,  "label": "1 - You walked away" },
+        { "t": 7,  "label": "2 - Seven repos landed" },
+        { "t": 17, "label": "3 - Rarity you cannot fake" },
+        { "t": 27, "label": "4 - Silent success" },
+        { "t": 40, "label": "5 - And two more" },
+        { "t": 49, "label": "6 - The score" },
+        { "t": 61, "label": "7 - Not built yet" },
+        { "t": 71, "label": "8 - That is the day" }
+      ]
+    }
+  ]
+}
