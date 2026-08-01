@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catch-up — August 1</title>
+<meta name="theme-color" content="#141413">
+<meta property="og:title" content="Catch-up — August 1">
+<meta property="og:description" content="What landed, what broke, and what still isn't built.">
+<meta property="og:image" content="poster.jpg">
+<meta property="og:type" content="video.other">
+<style>
+  :root { --ink:#141413; --cream:#FAF9F5; --coral:#CC785C; --muted:rgba(250,249,245,.62); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; padding:0; background:var(--ink); color:var(--cream);
+    font-family:ui-sans-serif,-apple-system,"Inter",system-ui,sans-serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:900px; margin:0 auto; padding:24px 18px 56px; }
+  .kicker { font-family:ui-monospace,"JetBrains Mono",Menlo,monospace; font-size:12px;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin:6px 0 10px; }
+  .kicker b { color:var(--coral); font-weight:500; }
+  h1 { font-family:ui-serif,"EB Garamond",Georgia,serif; font-weight:400;
+    font-size:clamp(28px,7vw,44px); line-height:1.1; letter-spacing:-.02em; margin:0 0 6px; }
+  .sub { color:var(--muted); font-size:15px; line-height:1.5; margin:0 0 20px; }
+  video { width:100%; height:auto; display:block; border-radius:10px;
+    background:#000; border:1px solid rgba(250,249,245,.14); }
+  ul { list-style:none; padding:0; margin:24px 0 0; border-top:1px solid rgba(250,249,245,.14); }
+  li { padding:11px 0; border-bottom:1px solid rgba(250,249,245,.09);
+    font-size:15px; line-height:1.45; display:flex; gap:14px; }
+  li span { font-family:ui-monospace,"JetBrains Mono",Menlo,monospace;
+    font-size:12px; color:var(--coral); min-width:34px; padding-top:3px; }
+  .foot { margin-top:26px; color:var(--muted); font-size:13px; line-height:1.6; }
+  code { font-family:ui-monospace,"JetBrains Mono",Menlo,monospace; font-size:.92em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker"><b>&#10033;</b> Catch-up &middot; Aug 1</div>
+  <h1>You set it running and walked away.</h1>
+  <p class="sub">What landed, what broke, and what still isn&rsquo;t built. 1 min 17 sec.</p>
+
+  <video controls playsinline preload="metadata" poster="poster.jpg">
+    <source src="catch-up-aug-1.mp4" type="video/mp4">
+    Your browser can&rsquo;t play this video &mdash;
+    <a href="catch-up-aug-1.mp4">download it instead</a>.
+  </video>
+
+  <ul>
+    <li><span>01</span> You walked away</li>
+    <li><span>02</span> Seven repos landed &mdash; constitution, mapp, twin-hub, dog-hub, secondbrain</li>
+    <li><span>03</span> The allele &mdash; rarity derived from the rappid tail, so it can&rsquo;t be forged</li>
+    <li><span>04</span> Silent success &mdash; a command reported inheriting while writing nothing to disk</li>
+    <li><span>05</span> Two more caught defects</li>
+    <li><span>06</span> 289 tests green &mdash; and zero personal values in anything public</li>
+    <li><span>07</span> Four things asked for, not built yet</li>
+    <li><span>08</span> That crash wasn&rsquo;t a crash</li>
+  </ul>
+
+  <p class="foot">
+    Built with HyperFrames. Source project on disk at
+    <code>~/videos/catchup-0801</code>. Narration is local (Kokoro); no personal
+    values appear anywhere in this video.
+  </p>
+</div>
+</body>
+</html>
