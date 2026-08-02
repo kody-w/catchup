@@ -1,197 +1,197 @@
 {
- "schema": "rapp-vision-channel/1.0",
- "id": "catchup",
- "name": "Catch-up",
- "handle": "@kody-w",
- "avatar": "https://avatars.githubusercontent.com/u/6146755?v=4",
- "about": "Autopilot catch-ups. Each episode is the wide shot on a session that ran while nobody was watching: what landed, what broke, and what is still queued. The failures are the point — a recap that only lists wins is not a recap.",
- "links": [
-  {
-   "label": "Watch on Pages",
-   "url": "https://kody-w.github.io/catchup/"
-  },
-  {
-   "label": "Source",
-   "url": "https://github.com/kody-w/catchup"
-  }
- ],
- "_hosting": "This channel lives inside the kody-w/catchup repo, next to the video it serves. Origin-relative from the player, like the other channels in the network.",
- "videos": [
-  {
-   "id": "catchup-2026-08-01-part-3",
-   "title": "Catch-up — August 1, part three: four things, and you own all of them",
-   "published": "2026-08-01",
-   "duration": 218,
-   "width": 1920,
-   "height": 1080,
-   "orientation": "landscape",
-   "tags": [
-    "catch-up",
-    "autopilot",
-    "rapp-vision",
-    "rapp-remix",
-    "rapp-os",
-    "local-first",
-    "measurement"
-   ],
-   "description": "The wide shot on a parallel run: RAPP Vision, RAPP Remix, the Learn with Kody channel, and RAPP OS. Every clip is live capture of the published site actually running, not a screenshot. The through-line is that none of it needs a server, an account or a database.\n\nThe part worth watching is the middle. Getting live replay to drive a real app surfaced three bugs that were invisible in the source: the helper clicked a DISABLED button and returned satisfied, so the engine never started; the keyboard event carried key:\"KeyW\" instead of key:\"w\", so the app set keys[\"keyw\"] and the car silently never moved; and the click helper fired a pointer sequence AND called el.click() as a fallback, double-activating every toggle — the camera skipped a mode and photo mode turned on and straight back off. All three came from measuring the running page from outside it. None would have come from review.\n\nThen RAPP Remix replays a transcript against the real brainstem and the answers change: the top Hacker News story was 245 points and 62 comments when recorded, and something else entirely on replay. A transcript that answers differently is not a broken recording, it is a measurement.\n\nEnds on RAPP OS booting from static files in about a second, and refusing to delete a file it does not own — it writes a tombstone that hides it on your device only.",
-   "thumb": "../poster-part-3.jpg",
-   "sources": [
+  "schema": "rapp-vision-channel/1.0",
+  "id": "catchup",
+  "name": "Catch-up",
+  "handle": "@kody-w",
+  "avatar": "https://avatars.githubusercontent.com/u/6146755?v=4",
+  "about": "Autopilot catch-ups. Each episode is the wide shot on a session that ran while nobody was watching: what landed, what broke, and what is still queued. The failures are the point \u2014 a recap that only lists wins is not a recap.",
+  "links": [
     {
-     "src": "../catch-up-aug-1-part-3.webm",
-     "type": "video/webm"
+      "label": "Watch on Pages",
+      "url": "https://kody-w.github.io/catchup/"
     },
     {
-     "src": "../catch-up-aug-1-part-3.mp4",
-     "type": "video/mp4"
+      "label": "Source",
+      "url": "https://github.com/kody-w/catchup"
     }
-   ],
-   "_sources_note": "WebM first, and both formats on purpose. Headless Chromium ships without an H.264 decoder, so an mp4-only episode cannot be verified in CI — it will not even decode in the harness that checks the rest of the site.",
-   "chapters": [
+  ],
+  "_hosting": "This channel lives inside the kody-w/catchup repo, next to the video it serves. Origin-relative from the player, like the other channels in the network.",
+  "videos": [
     {
-     "t": 0,
-     "label": "Four things shipped"
+      "id": "catchup-2026-08-01-part-3",
+      "title": "Catch-up \u2014 August 1, part three: four things, and you own all of them",
+      "published": "2026-08-01",
+      "duration": 218,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "tags": [
+        "catch-up",
+        "autopilot",
+        "rapp-vision",
+        "rapp-remix",
+        "rapp-os",
+        "local-first",
+        "measurement"
+      ],
+      "description": "The wide shot on a parallel run: RAPP Vision, RAPP Remix, the Learn with Kody channel, and RAPP OS. Every clip is live capture of the published site actually running, not a screenshot. The through-line is that none of it needs a server, an account or a database.\n\nThe part worth watching is the middle. Getting live replay to drive a real app surfaced three bugs that were invisible in the source: the helper clicked a DISABLED button and returned satisfied, so the engine never started; the keyboard event carried key:\"KeyW\" instead of key:\"w\", so the app set keys[\"keyw\"] and the car silently never moved; and the click helper fired a pointer sequence AND called el.click() as a fallback, double-activating every toggle \u2014 the camera skipped a mode and photo mode turned on and straight back off. All three came from measuring the running page from outside it. None would have come from review.\n\nThen RAPP Remix replays a transcript against the real brainstem and the answers change: the top Hacker News story was 245 points and 62 comments when recorded, and something else entirely on replay. A transcript that answers differently is not a broken recording, it is a measurement.\n\nEnds on RAPP OS booting from static files in about a second, and refusing to delete a file it does not own \u2014 it writes a tombstone that hides it on your device only.",
+      "thumb": "../poster-part-3.jpg",
+      "sources": [
+        {
+          "src": "../catch-up-aug-1-part-3.webm",
+          "type": "video/webm"
+        },
+        {
+          "src": "../catch-up-aug-1-part-3.mp4",
+          "type": "video/mp4"
+        }
+      ],
+      "_sources_note": "WebM first, and both formats on purpose. Headless Chromium ships without an H.264 decoder, so an mp4-only episode cannot be verified in CI \u2014 it will not even decode in the harness that checks the rest of the site.",
+      "chapters": [
+        {
+          "t": 0,
+          "label": "Four things shipped"
+        },
+        {
+          "t": 17,
+          "label": "RAPP Vision \u2014 a local-first YouTube"
+        },
+        {
+          "t": 35,
+          "label": "A video that is also a program"
+        },
+        {
+          "t": 57,
+          "label": "Three bugs, invisible in the code"
+        },
+        {
+          "t": 85,
+          "label": "RAPP Remix \u2014 replay the live engine"
+        },
+        {
+          "t": 122,
+          "label": "Learn with Kody \u2014 follow along"
+        },
+        {
+          "t": 146,
+          "label": "RAPP OS \u2014 DOG and GOD"
+        },
+        {
+          "t": 168,
+          "label": "Why the global layer is read-only"
+        },
+        {
+          "t": 202,
+          "label": "Verified from outside the page"
+        }
+      ]
     },
     {
-     "t": 17,
-     "label": "RAPP Vision — a local-first YouTube"
+      "id": "catchup-2026-08-01-part-2",
+      "title": "Catch-up \u2014 August 1, part two",
+      "published": "2026-08-01",
+      "duration": 75,
+      "tags": [
+        "catch-up",
+        "autopilot",
+        "rapp-allele",
+        "rappdex",
+        "rapp-pets",
+        "local-first"
+      ],
+      "description": "The addendum, and a correction \u2014 including one to itself. Part one ended on four things that did not exist. All four exist now: I built two of them, the rappdex and the OS, and the other two already did while this was running. The rappdex reads the mapp live so the dex gains an entry whenever the map does. Pets are the alleles drawn, derived from a mint-once tail so nobody can re-roll them. The OS mounts the public site as a read-only volume and /OS/system32 is a real path. Twenty thousand mints came out 75.0, 18.7, 5.9 and a third of a percent, matching the spec's own measured column. The part worth reading is the mistake: a duplicate shipped before the overlap was noticed, and the honest ending was archiving it rather than keeping two things claiming one job.",
+      "thumb": "../poster-part-2.jpg",
+      "sources": [
+        {
+          "src": "../catch-up-aug-1-part-2.mp4",
+          "type": "video/mp4"
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0,
+          "label": "1 - The correction"
+        },
+        {
+          "t": 10,
+          "label": "2 - What is live"
+        },
+        {
+          "t": 19,
+          "label": "3 - Rarity you cannot store"
+        },
+        {
+          "t": 32,
+          "label": "4 - The measured column"
+        },
+        {
+          "t": 44,
+          "label": "5 - The OS"
+        },
+        {
+          "t": 56,
+          "label": "6 - What I got wrong"
+        },
+        {
+          "t": 72,
+          "label": "7 - Close"
+        }
+      ]
     },
     {
-     "t": 35,
-     "label": "A video that is also a program"
-    },
-    {
-     "t": 57,
-     "label": "Three bugs, invisible in the code"
-    },
-    {
-     "t": 85,
-     "label": "RAPP Remix — replay the live engine"
-    },
-    {
-     "t": 122,
-     "label": "Learn with Kody — follow along"
-    },
-    {
-     "t": 146,
-     "label": "RAPP OS — DOG and GOD"
-    },
-    {
-     "t": 168,
-     "label": "Why the global layer is read-only"
-    },
-    {
-     "t": 202,
-     "label": "Verified from outside the page"
+      "id": "catchup-2026-08-01",
+      "title": "Catch-up \u2014 August 1",
+      "published": "2026-08-01",
+      "duration": 77,
+      "tags": [
+        "catch-up",
+        "autopilot",
+        "rapp-allele",
+        "local-first",
+        "hyperframes"
+      ],
+      "description": "You set it running and walked away. Seven repos landed \u2014 the constitution with its bill of rights, the map remade as the mapp, a hub for the twin to inherit from. The allele is the one worth your time: rarity is derived from the rappid tail, so nobody can re-roll it and anyone can verify it offline. Then the part worth reading \u2014 one command reported it had inherited an archetype while writing absolutely nothing to disk, which is the worst failure there is. 289 tests green across three repos, and zero personal values in anything public, checked by machine rather than by reading. Four things asked for do not exist yet.",
+      "thumb": "../poster.jpg",
+      "sources": [
+        {
+          "src": "../catch-up-aug-1.mp4",
+          "type": "video/mp4"
+        }
+      ],
+      "chapters": [
+        {
+          "t": 0,
+          "label": "1 - You walked away"
+        },
+        {
+          "t": 7,
+          "label": "2 - Seven repos landed"
+        },
+        {
+          "t": 17,
+          "label": "3 - Rarity you cannot fake"
+        },
+        {
+          "t": 27,
+          "label": "4 - Silent success"
+        },
+        {
+          "t": 40,
+          "label": "5 - And two more"
+        },
+        {
+          "t": 49,
+          "label": "6 - The score"
+        },
+        {
+          "t": 61,
+          "label": "7 - Not built yet"
+        },
+        {
+          "t": 71,
+          "label": "8 - That is the day"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "catchup-2026-08-01-part-2",
-   "title": "Catch-up — August 1, part two",
-   "published": "2026-08-01",
-   "duration": 73,
-   "tags": [
-    "catch-up",
-    "autopilot",
-    "rapp-allele",
-    "rappdex",
-    "rapp-pets",
-    "local-first"
-   ],
-   "description": "The addendum, and a correction: part one ended on four things that did not exist. Three of them do now — the rappdex reads the mapp live so the dex gains an entry whenever the map does; pets are the alleles drawn, derived from a mint-once tail so nobody can re-roll them; the OS mounts the public site as a read-only volume and /OS/system32 is a real path. Twenty thousand mints came out 75.0, 18.7, 5.9 and a third of a percent, matching the spec's own measured column. The part worth reading is the mistake: two of the four were already built by parallel runs, a duplicate shipped before that was noticed, and the honest ending was archiving it rather than keeping two things claiming one job.",
-   "thumb": "../poster-part-2.jpg",
-   "sources": [
-    {
-     "src": "../catch-up-aug-1-part-2.mp4",
-     "type": "video/mp4"
-    }
-   ],
-   "chapters": [
-    {
-     "t": 0,
-     "label": "1 - The correction"
-    },
-    {
-     "t": 8,
-     "label": "2 - What is live"
-    },
-    {
-     "t": 16,
-     "label": "3 - Rarity you cannot store"
-    },
-    {
-     "t": 30,
-     "label": "4 - The measured column"
-    },
-    {
-     "t": 42,
-     "label": "5 - The OS"
-    },
-    {
-     "t": 54,
-     "label": "6 - What I got wrong"
-    },
-    {
-     "t": 70,
-     "label": "7 - Close"
-    }
-   ]
-  },
-  {
-   "id": "catchup-2026-08-01",
-   "title": "Catch-up — August 1",
-   "published": "2026-08-01",
-   "duration": 77,
-   "tags": [
-    "catch-up",
-    "autopilot",
-    "rapp-allele",
-    "local-first",
-    "hyperframes"
-   ],
-   "description": "You set it running and walked away. Seven repos landed — the constitution with its bill of rights, the map remade as the mapp, a hub for the twin to inherit from. The allele is the one worth your time: rarity is derived from the rappid tail, so nobody can re-roll it and anyone can verify it offline. Then the part worth reading — one command reported it had inherited an archetype while writing absolutely nothing to disk, which is the worst failure there is. 289 tests green across three repos, and zero personal values in anything public, checked by machine rather than by reading. Four things asked for do not exist yet.",
-   "thumb": "../poster.jpg",
-   "sources": [
-    {
-     "src": "../catch-up-aug-1.mp4",
-     "type": "video/mp4"
-    }
-   ],
-   "chapters": [
-    {
-     "t": 0,
-     "label": "1 - You walked away"
-    },
-    {
-     "t": 7,
-     "label": "2 - Seven repos landed"
-    },
-    {
-     "t": 17,
-     "label": "3 - Rarity you cannot fake"
-    },
-    {
-     "t": 27,
-     "label": "4 - Silent success"
-    },
-    {
-     "t": 40,
-     "label": "5 - And two more"
-    },
-    {
-     "t": 49,
-     "label": "6 - The score"
-    },
-    {
-     "t": 61,
-     "label": "7 - Not built yet"
-    },
-    {
-     "t": 71,
-     "label": "8 - That is the day"
-    }
-   ]
-  }
- ]
+  ]
 }
