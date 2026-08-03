@@ -105,6 +105,10 @@
         {
           "src": "../catch-up-aug-1-part-2.mp4",
           "type": "video/mp4"
+        },
+        {
+          "src": "../catch-up-aug-1-part-2.webm",
+          "type": "video/webm"
         }
       ],
       "chapters": [
@@ -136,7 +140,8 @@
           "t": 72,
           "label": "7 - Close"
         }
-      ]
+      ],
+      "_sources_note": "WebM added alongside the mp4, not in place of it. Headless Chromium ships without an H.264 decoder, so an mp4-only episode measured readyState=0, networkState=3 and duration=NaN - it could not be verified by any automated check. canPlayType('video/mp4') answers 'maybe' for it, which is why the decode attempt, not the codec string, is the measurement."
     },
     {
       "id": "catchup-2026-08-01",
@@ -156,6 +161,10 @@
         {
           "src": "../catch-up-aug-1.mp4",
           "type": "video/mp4"
+        },
+        {
+          "src": "../catch-up-aug-1.webm",
+          "type": "video/webm"
         }
       ],
       "chapters": [
@@ -191,7 +200,8 @@
           "t": 71,
           "label": "8 - That is the day"
         }
-      ]
+      ],
+      "_sources_note": "WebM added alongside the mp4, not in place of it. Headless Chromium ships without an H.264 decoder, so an mp4-only episode measured readyState=0, networkState=3 and duration=NaN - it could not be verified by any automated check. canPlayType('video/mp4') answers 'maybe' for it, which is why the decode attempt, not the codec string, is the measurement."
     }
   ]
 }
